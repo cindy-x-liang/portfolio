@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Giver</title>
+    <link rel="stylesheet" href="ithaca-transit.css">
+</head>
+<body>
+
+<div class="project-container">
+    <h1 class="project-title">The Giver</h1>
+
+    <p class="project-description">
+      Many times we may struggle to brainstorm gift ideas to give to our peers.
+       The Giver was a project developed as a final project for the language and information course (CS4300) at Cornell University. 
+       <br>
+       The Giver is a web application that provides gift suggestions to users based on a gift receiver's likes and interests. 
+       The dataset used for this project is Amazon items. Using a bag of words model, we stored each Amazon item as a vector of its description and features. 
+       We then stored all of our documents using an inverted index, the keys being the words and values being a list of all documents containing that word.
+        We used TF-IDF to correctly weight the important terms. 
+        Common filler words like 'the' or 'a' are weighted less. 2 methods were used to return relevant documents to users.
+         These would be cosine similarity and singular vector decomposition (SVD). 
+         <br>
+         To further filter results, we implemented Rocchio's algorithm to provide more relevant results based on the user's feedback. 
+         The app performed well when testing it amongst various prompts and asking our classmates to provide feedback. 
+    </p>
+
+    <div class="project-section">
+        <h2>Technologies Used</h2>
+        <p>Flask, Bag of Words, TF-IDF, SVD</p>
+    </div>
+
+    <div class="project-gallery">
+        <img src="images/transit.png" alt="Ithaca Transit App Screenshot" class="project-img">
+        <img src="images/transit.png" alt="Ithaca Transit Live Map" class="project-img">
+        <img src="images/transit.png" alt="Ithaca Transit Live Map" class="project-img">
+        <img src="images/transit.png" alt="Ithaca Transit Live Map" class="project-img">
+    </div>
+
+
+
+    <div class="project-links">
+      <a href="index.html" class="btn back-btn">← Back to Projects</a>
+        <a href="https://github.com/cindy-x-liang/The-Giver" target="_blank" class="btn">View on GitHub</a>
+        
+    </div>
+</div>
+
+</body>
+</html>

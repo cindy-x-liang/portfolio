@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth
+}
+
+body {
+  background: #080808;
+  color: #fff
+}
+
+#hi {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88px;
+  z-index: 10;
+  background: black;
+  -webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/testbackground.png);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 250px;
+
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+
+}
+
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+  background-image: url(images/Screenshot\ 2023-06-19\ at\ 7.25.04\ PM.png);
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.header-text a {
+  color: #fff;
+}
+
+.header-text p {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.header-text h1 span {
+  color: pink;
+}
+
+.learn-more {
+  margin-top: 40px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-style: italic;
+}
+
+.learn-more div i {
+
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+/*--------about---------*/
+#about {
+  padding: 80px 0;
+  color: #ababab;
+
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+
+}
+
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+}
+
+.sub-title p {
+  color: white;
+}
+
+.sub-title a {
+  color: white;
+}
+
+.sub-title p a {
+  color: white;
+}
+
+/* .tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+  color:
+      #dab0d9;
+
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+  color: #fff;
+
+}
+
+.tab-contents ul li span {
+  color:
+      #dab0d9;
+  font-size: 14px;
+
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+
+} */
+
+
+#services {
+  padding: 30px 0;
+
+
+}
+
+.sub-title {
+  background-image: url(images/Screenshot\ 2023-06-19\ at\ 7.25.04\ PM.png);
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* 
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.services-list div {
+  background: #262626;
+  padding: 60px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.services-list div i h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 30px;
+
+}
+
+.services-list div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+
+.services-list div .layer1 {
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(rgb(147, 181, 186), #dab0d9);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 16px;
+  transition: height 0.5s;
+}
+
+
+.services-list div .layer1 a {
+
+  color: #fff;
+  text-decoration: none;
+  font-size: 5px;
+  line-height: 5px;
+  position: absolute;
+  bottom: 50px;
+  display: inline-block;
+
+  width: 5px;
+
+  height: 5px;
+
+ 
+  right: 60px;
+
+
+  text-align: center;
+
+}
+
+.services-list div:hover {
+
+  transform: translateY(-10px);
+  height: 100%
+}
+
+.services-list div:hover .layer1 {
+  height: 100%
+} */
+
+.footer-text {
+  margin-top: 40px;
+  font-size: 15px;
+  text-align: right;
+  text-decoration: none;
+  color: #fff;
+  font-style: italic;
+}
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  background: black;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color:white;
+  font-weight: 550;  /* Makes the text bold */
+  transition: 0.3s;
+}
+
+.tab-btn:hover, .tab-btn.active {
+  background-image: url(images/Screenshot\ 2023-06-19\ at\ 7.25.04\ PM.png);
+  color: black;
+}
+
+/* Tab content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Project container */
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.services-list > div {
+  background: #1c1c1c;
+  color:white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: calc(33.33% - 20px);
+  transition: 0.3s;
+}
+
+.services-list > div:hover {
+  transform: translateY(-10px);
+}
+
+/* Remove underline from links */
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Add hover effect */
+.project-link div {
+  background: #1c1c1c;
+  border-radius: 8px;
+  padding: 20px;
+  color:white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 350px;
+  transition: 0.3s;
+}
+
+.project-link div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}

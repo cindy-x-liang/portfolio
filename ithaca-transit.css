@@ -1,0 +1,177 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+/* Black Background */
+body {
+  background: #0f0f0f;
+  color: #f0f0f0;
+}
+
+/* Container Styling */
+.project-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #1c1c1c;  /* Dark grey card background */
+  border-radius: 20px;   /* Rounded edges */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title Styling */
+.project-title {
+  font-size: 2.8rem;
+  color: transparent;  /* Light blue title */
+  margin-bottom: 20px;
+  background-image: url(images/Screenshot\ 2023-06-19\ at\ 7.25.04\ PM.png);
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  text-align: left;
+}
+/* .project-title h1 {
+  font-size: 60px;
+  margin-top: 20px;
+  background-image: url(images/Screenshot\ 2023-06-19\ at\ 7.25.04\ PM.png);
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+} */
+
+/* Description Styling */
+.project-description {
+  font-size: 1.3rem;
+  color: #ccc;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+/* Section Styling */
+.project-section {
+  margin-bottom: 40px;
+  padding: 30px;
+  background: #2a2a2a; /* Slightly lighter grey for sections */
+  border-radius: 15px;  /* Rounded edges */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+/* .project-section:hover {
+  transform: translateY(-10px);
+} */
+
+.project-section h2 {
+  font-size: 2rem;
+  background-image: url(images/Screenshot\ 2023-06-19\ at\ 7.25.04\ PM.png);
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  margin-bottom: 15px;
+}
+
+/* List Styling */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  font-size: 1.1rem;
+  color: #bbb;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  position: relative;
+}
+
+ul li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Technology Section */
+.project-section p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* Links and Buttons */
+.project-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1rem;
+  color: #444;
+
+  border-radius: 30px;  /* Rounded buttons */
+  transition: 0.3s;
+  /* box-shadow: 0 5px 15px rgba(183, 157, 240, 0.3); */
+}
+
+.btn:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+/* Back Button */
+.back-btn {
+  background: #444;
+}
+
+.back-btn:hover {
+  background: #666;
+}
+
+/* Remove purple color from visited links */
+a {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+/* Image Gallery Styling */
+.project-gallery {
+  display: flex;
+  gap: 20px; 
+  justify-content: flex-start;  /* Align images to the left */
+  flex-wrap: wrap;  /* Allow images to wrap on smaller screens */
+  margin-bottom: 40px;
+}
+
+.project-img {
+  width: 100%;              /* Full width by default */
+  max-width: 400px;         /* Limit image size */
+  border-radius: 15px;      /* Rounded edges */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
