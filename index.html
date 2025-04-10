@@ -29,7 +29,9 @@
                                 class="fa-brands fa-linkedin-in"></i></a> </li>
                     <li> <a href="https://github.com/cindy-x-liang" target="_blank"><i
                                 class="fa-brands fa-github"></i></a> </li>
-                    <li> <a href="mailto: cl2329@cornell.edu"><i class="fa-regular fa-envelope"></i></a> </li>
+                    <li> <button onclick="copyEmail()" class="icon-button">
+                      <i class="fa-regular fa-envelope"></i>
+                    </button> </li>
                 </ul>
             </nav>
         </div>
@@ -416,6 +418,23 @@ As an engineer, I am constantly seeking ways to improve my technical skillsets w
   </div>
   
     <script>
+      window.addEventListener('DOMContentLoaded', () => {
+    const hash = window.location.hash.substring(1); // Get the part after #
+    if (hash) {
+        const tabButton = document.querySelector(`.tab-btn[onclick="openTab('${hash}')"]`);
+        if (tabButton) tabButton.click();  // Simulate a click on the correct tab
+    }
+});
+function copyEmail() {
+    const email = "cl2329@cornell.edu";
+    navigator.clipboard.writeText(email)
+        .then(() => {
+            alert("Email copied to clipboard!");
+        })
+        .catch(err => {
+            console.error("Failed to copy email: ", err);
+        });
+}
 
         // var tablinks = document.getElementsByClassName("tab-links");
         // var tabcontents = document.getElementsByClassName("tab-contents");
