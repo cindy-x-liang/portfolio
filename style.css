@@ -428,3 +428,32 @@ nav ul li a:hover::after {
   cursor: pointer;
   padding: 0;
 }
+
+/* Inherit original styles */
+.services-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: calc(33.33% - 20px);
+}
+
+.services-item {
+  background: #1c1c1c;
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  height: 100%;
+}
+
+.services-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Maintain layout in .services-list */
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
