@@ -141,7 +141,10 @@ nav ul li a:hover::after {
 }
 
 .about-col-1 {
+  display: flex;
+  justify-content: center;
   flex-basis: 35%;
+  align-items: center; /* optional: centers it vertically too if height grows */
 
 }
 
@@ -152,6 +155,7 @@ nav ul li a:hover::after {
 
 .about-col-2 {
   flex-basis: 60%;
+  /* max-width: 500px; */
 
 }
 
