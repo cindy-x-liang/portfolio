@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,27 +7,27 @@
   line-height: 1.6;
 }
 
-/* Black Background */
+
 body {
   background: #0f0f0f;
   color: #f0f0f0;
 }
 
-/* Container Styling */
+
 .project-container {
   max-width: 900px;
   margin: 50px auto;
   padding: 40px;
-  background: #1c1c1c;  /* Dark grey card background */
-  border-radius: 20px;   /* Rounded edges */
+  background: #1c1c1c;  
+  border-radius: 20px;   
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   animation: fadeIn 0.8s ease-in-out;
 }
 
-/* Title Styling */
+
 .project-title {
   font-size: 2.8rem;
-  color: transparent;  /* Light blue title */
+  color: transparent; 
   margin-bottom: 20px;
   background-image: url(images/Screenshot\ 2023-06-19\ at\ 7.25.04\ PM.png);
   background-size: cover;
@@ -46,7 +46,7 @@ body {
   color: transparent;
 } */
 
-/* Description Styling */
+
 .project-description {
   font-size: 1.3rem;
   color: #ccc;
@@ -54,19 +54,16 @@ body {
   text-align: left;
 }
 
-/* Section Styling */
+
 .project-section {
   margin-bottom: 40px;
   padding: 30px;
-  background: #2a2a2a; /* Slightly lighter grey for sections */
-  border-radius: 15px;  /* Rounded edges */
+  background: #2a2a2a;
+  border-radius: 15px;  
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s;
 }
 
-/* .project-section:hover {
-  transform: translateY(-10px);
-} */
 
 .project-section h2 {
   font-size: 2rem;
@@ -77,7 +74,7 @@ body {
   margin-bottom: 15px;
 }
 
-/* List Styling */
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -99,13 +96,11 @@ ul li::before {
   font-size: 1.2rem;
 }
 
-/* Technology Section */
 .project-section p {
   font-size: 1.2rem;
   color: #ddd;
 }
 
-/* Links and Buttons */
 .project-links {
   display: flex;
   gap: 15px;
@@ -118,9 +113,9 @@ ul li::before {
   font-size: 1rem;
   color: white;
 
-  border-radius: 30px;  /* Rounded buttons */
+  border-radius: 30px; 
   transition: 0.3s;
-  /* box-shadow: 0 5px 15px rgba(183, 157, 240, 0.3); */
+ 
 }
 
 .btn:hover {
@@ -128,7 +123,6 @@ ul li::before {
   transform: scale(1.05);
 }
 
-/* Back Button */
 .back-btn {
   background: #444;
 }
@@ -137,7 +131,7 @@ ul li::before {
   background: #666;
 }
 
-/* Remove purple color from visited links */
+
 a {
   color: inherit;
 }
@@ -146,7 +140,7 @@ a:visited {
   color: inherit;
 }
 
-/* Fade-In Animation */
+
 @keyframes fadeIn {
   from {
       opacity: 0;
@@ -159,19 +153,18 @@ a:visited {
 }
 
 
-/* Image Gallery Styling */
 .project-gallery {
   display: flex;
   gap: 20px; 
-  justify-content: center;  /* Align images to the left */
-  flex-wrap: wrap;  /* Allow images to wrap on smaller screens */
+  justify-content: center;  
+  flex-wrap: wrap;  
   margin-bottom: 40px;
 }
 
 .project-img {
-  width: 100%;              /* Full width by default */
-  max-width: 400px;         /* Limit image size */
-  border-radius: 15px;      /* Rounded edges */
+  width: 100%;  
+  max-width: 400px;       
+  border-radius: 15px;     
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);  
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -182,10 +175,10 @@ figure {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 300px; /* Adjust image size */
+  max-width: 300px; 
 }
 
-/* Caption Styling */
+
 figcaption {
   margin-top: 10px;
   font-size: 14px;

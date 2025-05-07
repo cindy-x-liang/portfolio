@@ -409,13 +409,12 @@ nav ul li a:hover::after {
 #work-experience {
   scroll-margin-top: 80px;
 }
-/* Remove underline from links */
+
 .project-link {
   text-decoration: none;
   color: inherit;
 }
 
-/* Add hover effect */
 .project-link div {
   background: #1c1c1c;
   border-radius: 8px;
@@ -440,7 +439,7 @@ nav ul li a:hover::after {
   padding: 0;
 }
 
-/* Inherit original styles */
+
 .services-link {
   text-decoration: none;
   color: inherit;
@@ -462,7 +461,6 @@ nav ul li a:hover::after {
   transform: translateY(-10px);
 }
 
-/* Maintain layout in .services-list */
 .services-list {
   display: flex;
   flex-wrap: wrap;
