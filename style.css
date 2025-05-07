@@ -402,6 +402,13 @@ nav ul li a:hover::after {
   transform: translateY(-10px);
 }
 
+#projects {
+  scroll-margin-top: 80px;
+}
+
+#work-experience {
+  scroll-margin-top: 80px;
+}
 /* Remove underline from links */
 .project-link {
   text-decoration: none;
@@ -460,4 +467,9 @@ nav ul li a:hover::after {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+#work-experience {
+  padding: 60px 0;
+ 
 }
