@@ -403,6 +403,15 @@ nav ul li a:hover::after {
   transform: translateY(-10px);
 }
 
+ .services-list i[class^="fa-"],
+.services-item i[class^="fa-"] {
+  font-size: 2rem; /* change to desired size */
+  
+  display: block;        /* Forces them onto their own line */
+
+  margin: 1px;   /* Auto centers block elements + adds spacing below */
+}
+
 #class {
   scroll-margin-top: 160px; /* Adjust based on your nav height */
 }
