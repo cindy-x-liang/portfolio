@@ -384,25 +384,40 @@ nav ul li a:hover::after {
 
 /* Project container */
 .services-list {
-  display: flex;
+  
+  display: grid;
   flex-wrap: wrap;
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+  gap: 20px; /* Space between cards */
+   min-width: 900px; /* Adjust depending on your card width */
 }
 
-.services-list > div {
-  background: #1c1c1c;
-  color:white;
+/* Project cards */
+.services-list >  div {
+  
+background: #1c1c1c;
+color: white;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  width: calc(33.33% - 20px);
   transition: 0.3s;
+  height: 100%; /* Make all cards same height in a row */
+
+}
+.services-list > a > div {
+  
+background: #1c1c1c;
+  color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  height: 100%; /* Make all cards same height in a row */
 }
 
-.services-list > div:hover {
+.services-list > a > div:hover {
   transform: translateY(-10px);
 }
-
  .services-list i[class^="fa-"],
 .services-item i[class^="fa-"] {
   font-size: 2rem; /* change to desired size */
@@ -438,7 +453,7 @@ nav ul li a:hover::after {
   padding: 20px;
   color:white;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  width: 350px;
+  width: 100%;
   transition: 0.3s;
 }
 
@@ -461,7 +476,8 @@ nav ul li a:hover::after {
   text-decoration: none;
   color: inherit;
   display: block;
-  width: calc(33.33% - 20px);
+  width: 100%;
+  background: #1c1c1c;
 }
 
 .services-item {
@@ -478,11 +494,7 @@ nav ul li a:hover::after {
   transform: translateY(-10px);
 }
 
-.services-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
+
 
 #work-experience {
   padding: 60px 0;
